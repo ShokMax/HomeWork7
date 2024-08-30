@@ -4,8 +4,10 @@ public class Main {
         int salary = 15000;
         int total = 0;
         int i = 0;
+        double percent = 1D / 100;
         while (total <= 2_459_000) {
-            total = total + salary;
+            total += salary;
+            total = (int) (total*(1+percent));
             i++;
             System.out.println(" Месяц " +  i + " сумма накоплений ровна " + total + " рублей ");
         }
@@ -74,16 +76,6 @@ public class Main {
             if (year > start)
             System.out.println(year);
         }
-
-
-
-
-
-
-
-
-
-
     }
     }
         
